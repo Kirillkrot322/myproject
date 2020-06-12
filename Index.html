@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<meta>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<style type="text/css">
+		
+		.thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            height: 500px;
+        }
+
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .thumb {
+            padding: 5px;
+        }
+
+        .tab-content {
+	      padding: 14px;
+	    }
+        img {
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">Навігація</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Дом <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Силки</a>
+	      </li>
+	      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Меню 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Пункт 1</a>
+          <a class="dropdown-item" href="#">Пункт 2</a>
+          <a class="dropdown-item" href="#">Пункт 3</a>
+        </div>
+      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неробоча</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="row">
+		<div class="col-4">
+		    <ul class="list-group">
+			  <li class="list-group-item">Список</li>
+
+			  <li class="list-group-item list-group-item-primary">1 Элемент основной группы списков</li>
+			  <li class="list-group-item list-group-item-secondary">Дополнительный элемент группы списков</li>
+			  <li class="list-group-item list-group-item-success">Элемент группы списка успешных действий</li>
+			  <li class="list-group-item list-group-item-danger">Элемент группы списка опасности</li>
+			  <li class="list-group-item list-group-item-warning">Элемент группы списка предупреждений</li>
+			  <li class="list-group-item list-group-item-info">Элемент группы списка информации</li>
+			  <li class="list-group-item list-group-item-light">Элемент группы с легким списком</li>
+			  <li class="list-group-item list-group-item-dark">Элемент группы темных списков</li>
+			</ul>	
+	    </div>
+	    <div class="col-8">
+		    <div class="row">
+		    	<div class="col-6">Цей урок продовжить серію заміток з розробки на Bootstrap, трохи підвищивши рівень. З попередніх уроків ви могли дізнатися, як працювати з текстом, таблицями, як верстати шаблони й створювати форми.</div>
+		    	<div class="col-6 img-thumbnail" align="center" ><img src="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg"></div>
+		    </div>
+  		</div>
+		
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-6">Слайдер</div>
+		<div class="col-6">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+				    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+				</ul>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="https://bipbap.ru/wp-content/uploads/2017/05/VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg" alt="Первый слайд">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="https://i.pinimg.com/736x/ab/b6/a8/abb6a800ab2193fcedd9bda566b7402c.jpg" alt="Второй слайд">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg" alt="Третий слайд">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  </a>
+			</div>
+		</div>
+	</div>
+	<hr>
+	
+    <div class="row">
+        <div class="col-4 thumb">
+            <a data-fancybox="gallery" href="https://bipbap.ru/wp-content/uploads/2017/05/VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg">
+                <img class="img-fluid" src="https://bipbap.ru/wp-content/uploads/2017/05/VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-4 thumb">
+            <a data-fancybox="gallery" href="https://i.pinimg.com/736x/ab/b6/a8/abb6a800ab2193fcedd9bda566b7402c.jpg">
+                <img class="img-fluid" src="https://i.pinimg.com/736x/ab/b6/a8/abb6a800ab2193fcedd9bda566b7402c.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-4 thumb">
+            <a data-fancybox="gallery" href="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg">
+                <img class="img-fluid" src="https://2krota.ru/wp-content/uploads/2019/02/0_i-1.jpg" alt="...">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+    	<div class="container-fluid">
+    <ul class="nav nav-tabs">
+      <li class="active nav-item active">
+        <a class="nav-link" data-toggle="tab" href="#description">Опис</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#characteristics">Характеристики</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#opinion">Відгуки</a>
+      </li >
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="description">
+        <h2 class="h4">Описание товара</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, in et nulla impedit, mollitia eos quae inventore, minus molestiae est consequuntur nobis similique repudiandae reprehenderit fugit cumque voluptatum laudantium tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur deleniti animi, voluptates expedita incidunt dignissimos fugiat repellendus dolorem ut corrupti sit libero nemo est iusto saepe, facilis rerum quam.</p>
+      </div>
+      <div class="tab-pane" id="characteristics">
+        <h2 class="h4">Характеристики товара</h2>
+        <p>Це початок практичної роботи над Bootstrap і основа будь-якого проекту на його основі. Знання цього уроку необхідні, але далеко не достатні, тому рекомендую почати з першого заняття і поступово вивчати інші, адже складність збільшується в міру накопичених вами знань. А пояснювати я намагаюся максимально простою мовою. Тобто так, щоб я зміг зрозуміти все з першого разу. Отжеююю</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque incidunt modi quam laboriosam velit sit corporis veritatis optio voluptatum, officia quis quas debitis, commodi nisi, reprehenderit ratione nesciunt asperiores.</p>
+      </div>
+      <div class="tab-pane" id="opinion">
+        <h2 class="h4">Отзывы</h2>
+        <p>Причин дві: по-перше, швидше за все вам знадобляться не всі компоненти Bootstrap, а по-друге, вага такого шаблону навіть в стислому вигляді чималенький — 530 Кб. Додайте 90 Кб jQuery, без якого js-компоненти працювати відмовляться. Такої розкоші жоден фронт-енд розробник дозволити собі не може, тому будемо видаляти все зайве.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cupiditate! Aspernatur accusamus dolores tenetur iure rerum ut quibusdam nisi aliquam facilis impedit. Sed amet nemo, veniam in placeat eveniet illo!</p>
+      </div>
+    </div>
+  </div>
+    </div>
+</body>
+</html>
